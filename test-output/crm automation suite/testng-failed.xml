@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [crm automation suite]" parallel="methods">
+  <test name="crm page  test(failed)" parallel="methods">
+    <classes>
+      <class name="com.crm.test.RegistrationPageTest">
+        <methods>
+          <include name="validatePricingLinkTest"/>
+          <include name="tearDown"/>
+          <include name="validateFeaturesLinkTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.crm.test.RegistrationPageTest -->
+    </classes>
+  </test> <!-- crm page  test(failed) -->
+</suite> <!-- Failed suite [crm automation suite] -->

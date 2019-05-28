@@ -1,0 +1,45 @@
+
+xpath
+-------
+//input[@name='username']
+//input[@type='submit']
+//input[@type='submit' and @value='Login']
+//a[text()='Features']
+//a[contains(text(),'Features')]
+//button[@type='button' and @class='btn']
+//button[contains(text(),'Sign Up')]
+//div[@class='dropdown']/button[@type='button' and @id='dropdown]
+//button[@id='dropdownMenuButton']
+
+//input[@name='client_lookup']/following::input[@type='button']
+//input[@name='client_lookup']/following-sibling::input[@type='button']
+
+//input[@type='button']//preceding::input[@name='client_lookup']
+//input[@type='button']//preceding-sibling::input[@name='client_lookup']
+
+//a[text()='tom tomi']//parent::td[@class='datalistrow']//preceding-sibling::td[@class='datalistrow']//input[@name='contact_id']
+//a[text()='dan dani']//parent::td[@class='datalistrow']//forward-sibling::td[@class='datalistrow]//input[@name='contact_id']
+
+
+		input[starts-with(@id,'first')]
+		input[ends-with(@id,_first)]
+		button[contains(text(),'Sign Up')]
+		button[contains(@attribute,'Sign Up')
+		
+		
+		CSS
+		-----
+		tagName[attribute='value']
+		tagName#idvalue
+		tagName.classvalue
+		
+		[class='Sign in'][title*='Sign in-username']
+		[class='Sign in']tr[title*='Sign in-username']
+		[class='datepicker-days'] th[class='next']
+		[class='datepicker-days'] [class='datepicker-switch']
+		
+		Regular Expression
+		---------------------
+		tagName[attribute*='text']
+		a[title*='Sign in']
+		a[href*='Sign in']

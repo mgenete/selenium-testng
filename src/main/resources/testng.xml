@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="crm automation suite" parallel="tests" thread-count="5">
+
+
+	<test name="crm page main test">
+		<classes>
+			<class name="com.crm.test.FeaturesPageTest" />
+			<class name="com.crm.test.PricingPageTest" />
+			<class name="com.crm.test.RegistrationPageTest" />
+		</classes>
+	</test>
+	
+	
+	<test name="crm featuers page  test">
+		<classes>
+			<class name="com.crm.test.FeaturesPageTest" />
+	
+		</classes>
+	</test>
+	
+	<test name="crm pricing page title test">
+		<classes>
+			
+			<class name="com.crm.test.PricingPageTest" />
+			
+		</classes>
+	</test>
+	
+	<test name="crm registration page title test">
+		<classes>
+			
+			<class name="com.crm.test.RegistrationPageTest" />
+		</classes>
+	</test>
+
+	<test name="usps login test">
+		<parameter name="url" value="https://www.usps.com/welcome.htm" />
+		<parameter name="username" value="Italian10005" />
+		<parameter name="password" value="Pencil48ver" />
+		<classes>
+			<class name="com.testng.ParameterAnnotation" />
+		</classes>
+	</test>
+	
+</suite> 

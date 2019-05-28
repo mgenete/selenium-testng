@@ -1,0 +1,20 @@
+download selenium server jar file (hub machine and node machine)
+Register Hub by invoking jar file
+	cd c:/sits/selenium server
+	java -jar selenium-server-standalone-3.14.0.jar -role hub
+Register nodes (by logging to machine where the node is registered)
+	cd c:/sits/selenium server
+
+Chrome
+java -Dwebdriver.chrome.driver="c:/sits/selenium server/chromedriver.exe" -jar selenium-server-standalone-3.14.0.jar -role node -hub http://192.168.1.4:4444/grid/register port 5566
+
+Firefox
+java -Dwebdriver.gecko.driver="c:/sits/selenium server/geckodriver.exe" -jar selenium-server-standalone-3.8.1.jar -role node -hub http://192.168.1.4:4444/grid/register port 5566
+
+MSEdge
+java -Dwebdriver.edge.driver="c:/sits/selenium server/MicrosoftWebDriver.exe" -jar selenium-server-standalone-3.8.1.jar -role node -hub http://192.168.1.4:4444/grid/register port 5566
+
+
+	
+	
+	
